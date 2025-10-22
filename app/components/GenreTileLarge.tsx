@@ -18,7 +18,7 @@ type Props = {
   onPress?: () => void;
 };
 
-export default function GenreTile({
+export default function GenreTileLarge({
   title = "Pop",
   bgColor = "#9854b2",
   image,
@@ -55,7 +55,7 @@ export default function GenreTile({
 const styles = StyleSheet.create({
   container: {
     width: 190, //229.43 prev.
-    height: 65, //87.14 prev.
+    height: 115, //87.14 prev.
     position: "relative",
     overflow: "hidden",
     borderRadius: 4,
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   diagonalCard: {
     position: "absolute",
     left: 140, //190.02 prev.
-    top: 3.95,
+    top: 40,
     width: 70,
     height: 70,
     backgroundColor: "#1f1f21",
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   albumImage: {
     position: "absolute",
     left: 130, //180.95 prev.
-    top: -0.5, //-1.43 prev.
+    top: 30, //-1.43 prev.
     width: 70, //81.44 prev.
     height: 70,
     transform: [{ rotate: "24deg" }],

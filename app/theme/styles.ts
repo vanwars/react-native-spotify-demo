@@ -1,11 +1,11 @@
-import { StyleSheet } from 'react-native';
-import { colors } from './colors';
-import { borderRadius, spacing } from './spacing';
-import { typography } from './typography';
+import { StyleSheet } from "react-native";
+import { colors } from "./colors";
+import { borderRadius, spacing } from "./spacing";
+import { typography } from "./typography";
 
 export const createStyles = (isDark: boolean) => {
   const themeColors = isDark ? colors.dark : colors.light;
-  
+
   return StyleSheet.create({
     // Container styles
     container: {
@@ -14,15 +14,21 @@ export const createStyles = (isDark: boolean) => {
     },
     centeredContainer: {
       flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
+      justifyContent: "flex-start",
+      alignItems: "center",
       backgroundColor: themeColors.background,
       padding: spacing.lg,
     },
-    
+    headerRow: {
+      alignSelf: "flex-start",
+      flexDirection: "row",
+      alignItems: "center",
+      marginBottom: 16,
+    },
+
     // Text styles
     heading: {
-      fontSize: typography.fontSize['2xl'],
+      fontSize: typography.fontSize["2xl"],
       fontWeight: typography.fontWeight.bold,
       color: themeColors.text,
       marginBottom: spacing.sm,
@@ -43,38 +49,38 @@ export const createStyles = (isDark: boolean) => {
       color: themeColors.textSecondary,
       opacity: 0.7,
     },
-    
+
     // Button styles
     primaryButton: {
       backgroundColor: themeColors.primary,
       paddingHorizontal: spacing.lg,
       paddingVertical: spacing.md,
       borderRadius: borderRadius.full,
-      alignItems: 'center',
-      justifyContent: 'center',
+      alignItems: "center",
+      justifyContent: "center",
     },
     primaryButtonText: {
-      color: 'white',
+      color: "white",
       fontSize: typography.fontSize.base,
       fontWeight: typography.fontWeight.semibold,
     },
-    
+
     secondaryButton: {
-      backgroundColor: 'transparent',
+      backgroundColor: "transparent",
       borderWidth: 1,
       borderColor: themeColors.primary,
       paddingHorizontal: spacing.lg,
       paddingVertical: spacing.md,
       borderRadius: borderRadius.full,
-      alignItems: 'center',
-      justifyContent: 'center',
+      alignItems: "center",
+      justifyContent: "center",
     },
     secondaryButtonText: {
       color: themeColors.primary,
       fontSize: typography.fontSize.base,
       fontWeight: typography.fontWeight.semibold,
     },
-    
+
     // Card styles
     card: {
       backgroundColor: themeColors.card,
@@ -86,7 +92,7 @@ export const createStyles = (isDark: boolean) => {
       shadowRadius: 4,
       elevation: 3,
     },
-    
+
     // Input styles
     input: {
       backgroundColor: themeColors.surface,
@@ -98,7 +104,7 @@ export const createStyles = (isDark: boolean) => {
       fontSize: typography.fontSize.base,
       color: themeColors.text,
     },
-    
+
     // Divider
     divider: {
       height: 1,
