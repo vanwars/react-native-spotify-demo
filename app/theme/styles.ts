@@ -26,7 +26,6 @@ export const createStyles = (isDark: boolean) => {
       marginBottom: 16,
     },
 
-    // Text styles
     heading: {
       fontSize: typography.fontSize["2xl"],
       fontWeight: typography.fontWeight.bold,

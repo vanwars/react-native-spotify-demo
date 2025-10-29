@@ -153,7 +153,7 @@ export default function Search() {
           />
           <MusicCard
             title="Trending now"
-            videoUri="https://cdn.pixabay.com/video/2025/03/18/265815_large.mp4"
+            videoUri="https://cdn.pixabay.com/video/2015/08/08/139-135737102_large.mp4"
           />
           <MusicCard
             title="Podcasts for you"

@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "spotify-demo",
-    "slug": "spotify-demo",
+    "slug": "spotifyreactnative",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -43,6 +43,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a9865eba-8a3c-4793-8334-dc16422b7388"
+      }
+    },
+    "owner": "arestrep"
   }
 }
