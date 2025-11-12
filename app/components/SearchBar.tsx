@@ -11,6 +11,8 @@ import {
   ViewStyle,
 } from "react-native";
 
+//make text black when typing in the search bar 
+
 type Props = {
   placeholder?: string;
   value?: string;
